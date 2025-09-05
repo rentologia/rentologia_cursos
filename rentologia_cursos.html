@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentología - Maximización de Rentas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gold-100 bg-black">
+<style>
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero-gradient {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .text-gold {
+    color: #D4AF37;
+  }
+  .bg-gold {
+    background-color: #D4AF37;
+  }
+  .border-gold {
+    border-color: #D4AF37;
+  }
+  .text-gold-100 {
+    color: #F3E5AB;
+  }
+</style>
+   <!-- Header -->
+<header class="bg-black shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <i data-feather="trending-up" class="text-indigo-600 mr-2"></i>
+            <span class="text-xl font-bold text-gold">Rentología</span> <!-- Logo cambiado a blanco -->
+        </div>
+        <nav class="hidden md:flex space-x-8">
+    <a href="#home" class="font-medium text-gold hover:text-gold-400 transition">Inicio</a>
+    <a href="#about" class="font-medium text-gold hover:text-gold-400 transition">Nosotros</a>
+    <a href="#services" class="font-medium text-gold hover:text-gold-400 transition">Ofertas</a>
+    <a href="#pricing" class="font-medium text-gold hover:text-gold-400 transition">Precios</a>
+    <a href="#contact" class="font-medium text-gold hover:text-gold-400 transition">Contacto</a>
+</nav>
+        <button class="md:hidden">
+            <i data-feather="menu" class="text-white"></i> <!-- Ícono del menú cambiado a blanco -->
+        </button>
+    </div>
+</header>
+
+ <section id="home" class="hero-gradient text-white py-32 parallax relative">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-10" data-aos="fade-right">
+                <h1 class="text-4xl md:text-5xl font-bold text-gold mb-6">Maximiza las rentas de tus propiedades</h1>
+                <p class="text-xl mb-8 opacity-90">Tu aliado experto para optimizar ingresos. Aprende con nuestros cursos o asóciate con nosotros para resultados garantizados.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#services" class="bg-gold text-black px-6 py-3 rounded-lg font-medium hover:bg-yellow-600 transition duration-300 text-center">Explorar Cursos</a>
+                    <a href="#contact" class="border-2 border-gold text-gold px-6 py-3 rounded-lg font-medium hover:bg-gold hover:bg-opacity-10 transition duration-300 text-center">Contactar Asesoría</a>
+                </div>
+            </div>
+            <div class="md:w-1/2" data-aos="fade-left">
+                <img src="https://i.imgur.com/PNI9b8A.png" alt="Maximización de rentas" class="rounded-xl shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Abaut this section -->
+
+ <section id="about" class="py-20 bg-black">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-gold">Nosotros</h2>
+            <p class="max-w-2xl mx-auto text-white">
+                Somos especialistas en formación y asesoría para maximizar las rentas de propiedades. Enseñamos estrategias probadas con enfoque personalizado y acompañamos a nuestros clientes en cada etapa del proceso.
+            </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-black border border-gold p-6 rounded-xl shadow-md text-center card-hover" data-aos="fade-up" data-aos-delay="100">
+                <i data-feather="users" class="text-gold mb-4"></i>
+                <h3 class="font-bold mb-2 text-gold">Equipo Experto</h3>
+                <p class="text-white">Contamos con profesionales con amplia experiencia en administración y maximización de rentas.</p>
+            </div>
+            <div class="bg-black border border-gold p-6 rounded-xl shadow-md text-center card-hover" data-aos="fade-up" data-aos-delay="200">
+                <i data-feather="award" class="text-gold mb-4"></i>
+                <h3 class="font-bold mb-2 text-gold">Resultados Comprobados</h3>
+                <p class="text-white">Nuestras estrategias han ayudado a decenas de clientes a incrementar sus ingresos.</p>
+            </div>
+            <div class="bg-black border border-gold p-6 rounded-xl shadow-md text-center card-hover" data-aos="fade-up" data-aos-delay="300">
+                <i data-feather="heart" class="text-gold mb-4"></i>
+                <h3 class="font-bold mb-2 text-gold">Acompañamiento Personalizado</h3>
+                <p class="text-white">Brindamos atención personalizada y soporte continuo en cada proyecto.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Sección para incrustar el video de YouTube -->
+        <div class="mt-16">
+            <h2 class="text-center text-gold font-bold text-3xl mb-8">Mira Nuestro Video</h2>
+            <div class="max-w-5xl mx-auto">
+                <!-- Contenedor responsivo para el video -->
+                <div class="relative aspect-video">
+                    <!-- Iframe del video de YouTube -->
+                    <iframe 
+                        class="absolute inset-0 w-full h-full"
+                        src="https://www.youtube.com/embed/nhjAoi_OamU" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gold">Nuestras Ofertas</h2>
+                <p class="max-w-2xl mx-auto text-white">Elige la opción que mejor se adapte a tus necesidades de maximización de rentas.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Course Card -->
+                <div class="bg-black border border-gold rounded-xl shadow-md overflow-hidden transition duration-300 card-hover" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Curso online" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gold">Curso de Maximización de Rentas</h3>
+                 <p class="text-white">Aprende estrategias clave para optimizar ganancias de tus propiedades con nuestro curso online.</p>
+<div class="mb-4">
+    <h4 class="font-medium mb-2 text-gold">Incluye:</h4> <!-- Título en dorado -->
+    <ul class="space-y-2">
+        <li class="flex items-start">
+            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+            <span class="text-white">Sesiones en vivo o grabadas</span> <!-- Texto blanco -->
+        </li>
+        <li class="flex items-start">
+            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+            <span class="text-white">Material didáctico completo en PDF</span> <!-- Texto blanco -->
+        </li>
+        <li class="flex items-start">
+            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+            <span class="text-white">Guía de implementación de estrategias</span> <!-- Texto blanco -->
+        </li>
+        <li class="flex items-start">
+            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+            <span class="text-white">Acceso a comunidad de alumnos</span> <!-- Texto blanco -->
+        </li>
+    </ul>
+</div>
+<a href="#pricing" class="inline-block bg-indigo-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-indigo-700 transition">Más información</a> <!-- Texto blanco -->
+</div>
+</div>
+                
+             <!-- Advisory Card -->
+<div class="bg-black border border-gold rounded-xl shadow-md overflow-hidden transition duration-300 card-hover" data-aos="fade-left">
+    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Asesoría" class="w-full h-48 object-cover">
+    <div class="p-6">
+        <h3 class="text-xl font-bold text-gold">Asesoría Estratégica</h3> <!-- Título en dorado -->
+        <p class="text-white">Colaboramos contigo para maximizar rentas sin inversión inicial. Nosotros asumimos el riesgo.</p> <!-- Texto blanco -->
+        <div class="mb-4">
+            <h4 class="font-medium mb-2 text-gold">Modelo de colaboración:</h4> <!-- Título en dorado -->
+            <ul class="space-y-2">
+                <li class="flex items-start">
+                    <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                    <span class="text-white">Sin costo inicial</span> <!-- Texto blanco -->
+                </li>
+                <li class="flex items-start">
+                    <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                    <span class="text-white">Análisis y diagnóstico de propiedad</span> <!-- Texto blanco -->
+                </li>
+                <li class="flex items-start">
+                    <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                    <span class="text-white">Diseño de estrategia personalizada</span> <!-- Texto blanco -->
+                </li>
+                <li class="flex items-start">
+                    <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                    <span class="text-white">Retribución por éxito (3 años)</span> <!-- Texto blanco -->
+                </li>
+            </ul>
+        </div>
+        <a href="#contact" class="inline-block bg-indigo-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-indigo-700 transition">Contactar asesor</a> <!-- Texto blanco -->
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+    <!-- Benefits Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold">Beneficios Clave</h2>
+                <p class="max-w-2xl mx-auto text-white">Por qué elegir Rentología para maximizar tus rentas</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="flex" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mr-4">
+                        <div class="bg-indigo-100 w-12 h-12 rounded-full flex items-center justify-center">
+                            <i data-feather="shield" class="text-indigo-600"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Metodología Probada</h3>
+                        <p class="text-white">Estrategias que han demostrado su eficacia en el mercado de rentas.</p>
+                    </div>
+                </div>
+                <div class="flex" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mr-4">
+                        <div class="bg-indigo-100 w-12 h-12 rounded-full flex items-center justify-center">
+                            <i data-feather="award" class="text-indigo-600"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Asesoría Experta</h3>
+                        <p class="text-white">Profesionales con amplia experiencia en administración de propiedades.</p>
+                    </div>
+                </div>
+                <div class="flex" data-aos="fade-up" data-aos-delay="300">
+                    <div class="mr-4">
+                        <div class="bg-indigo-100 w-12 h-12 rounded-full flex items-center justify-center">
+                            <i data-feather="refresh-cw" class="text-indigo-600"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Flexibilidad</h3>
+                        <p class="text-white">Elige entre aprender con cursos o recibir apoyo directo con asesorías.</p>
+                    </div>
+                </div>
+                <div class="flex" data-aos="fade-up" data-aos-delay="400">
+                    <div class="mr-4">
+                        <div class="bg-indigo-100 w-12 h-12 rounded-full flex items-center justify-center">
+                            <i data-feather="activity" class="text-indigo-600"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Resultados Medibles</h3>
+                        <p class="text-white">Enfocados en incrementar tangiblemente tus ingresos por renta.</p>
+                    </div>
+                </div>
+                <div class="flex" data-aos="fade-up" data-aos-delay="500">
+                    <div class="mr-4">
+                        <div class="bg-indigo-100 w-12 h-12 rounded-full flex items-center justify-center">
+                            <i data-feather="life-buoy" class="text-indigo-600"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Soporte Continuo</h3>
+                        <p class="text-white">Equipo disponible para apoyarte en cada etapa del proceso.</p>
+                    </div>
+                </div>
+                <div class="flex" data-aos="fade-up" data-aos-delay="600">
+                    <div class="mr-4">
+                        <div class="bg-indigo-100 w-12 h-12 rounded-full flex items-center justify-center">
+                            <i data-feather="dollar-sign" class="text-indigo-600"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Sin Riesgo</h3>
+                        <p class="text-white">Modelo de colaboración sin inversión inicial para ti.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gold">Historias de Éxito</h2>
+                <p class="max-w-2xl mx-auto text-white">Lo que dicen nuestros clientes y colaboradores</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-black border border-gold p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-indigo-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i data-feather="user" class="text-indigo-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gold">Carlos M.</h4>
+                            <p class="text-gold">Propietario en Querétaro</p>
+                        </div>
+                    </div>
+                    <p class="text-white">"Gracias al curso de Rentología logré aumentar el ingreso de mis departamentos en un 35%. Las estrategias son claras y fáciles de implementar."</p>
+                </div>
+                <div class="bg-black border border-gold p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-indigo-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i data-feather="user" class="text-indigo-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gold">Ana L.</h4>
+                            <p class="text-gold">Inversionista</p>
+                        </div>
+                    </div>
+                    <p class="text-white">"Opté por el modelo de colaboración y en 6 meses ya había recuperado mi inversión inicial. Ahora tengo ingresos pasivos mucho mayores."</p>
+                </div>
+                <div class="bg-black border border-gold p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-indigo-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i data-feather="user" class="text-indigo-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gold">Roberto G.</h4>
+                            <p class="text-gold">Dueño de complejo habitacional</p>
+                        </div>
+                    </div>
+                    <p class="text-white">"La asesoría personalizada transformó completamente mi negocio. De tener vacantes constantes ahora tengo lista de espera con mejores precios."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gold">Nuestras Opciones</h2>
+                <p class="max-w-2xl mx-auto text-white">Elige el modelo que mejor se adapte a tus necesidades</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Course Pricing -->
+                <div class="bg-black border border-gold p-8 rounded-xl shadow-md text-center" data-aos="fade-right">
+                    <h3 class="text-xl font-bold mb-2 text-gold">Curso Online</h3>
+                    <p class="text-white">Aprende a tu ritmo</p>
+                    <div class="text-4xl font-bold mb-6 text-gold">$7,000 <span class="text-lg font-normal">MXN</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span class="text-white">Material PDF completo</span>
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                           <span class="text-white">Acceso a contenido exclusivo</span>
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span class="text-white">Soporte básico vía email</span>
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span class="text-white">Acceso a comunidad</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition">Inscribirse Ahora</a>
+                </div>
+                
+                <!-- Advisory Pricing -->
+                <div class="bg-black p-8 rounded-xl shadow-md text-center border-2 border-gold relative" data-aos="fade-left">
+                    <div class="absolute top-0 right-0 bg-gold text-black text-xs font-bold px-3 py-1 rounded-bl-lg">POPULAR</div>
+                    <h3 class="text-xl font-bold mb-2 text-gold">Modelo Colaboración</h3>
+                    <p class="text-white mb-6 text-white">Éxito compartido</p>
+                    <div class="text-4xl font-bold mb-6 text-green-500">$0 <span class="text-lg font-normal text-gold">Inversión</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                           <span class="text-white">Sin costo inicial</span>
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                           <span class="text-white">Análisis de propiedad</span>
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span class="text-white">Estrategia personalizada</span>
+                        </li>
+                        <li class="flex items-center justify-center">
+                            <i data-feather="check" class="text-green-500 mr-2"></i>
+                            <span class="text-white">Pago por resultados (3 años)</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition">Evaluar mi Proyecto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-black parallax" style="background-image: url('https://i.imgur.com/1Fa2Td1.png');">
+        <!-- <div class="absolute inset-0 bg-black bg-opacity-60"></div>-->
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-gold">Contacta con Rentología</h2>
+                <p class="max-w-2xl mx-auto text-white">Estamos aquí para ayudarte a maximizar tus rentas. Contáctanos a través de los siguientes medios.</p>
+            </div>
+            
+  <div class="max-w-3xl mx-auto bg-black bg-opacity-50 backdrop-blur-sm p-8 sm:p-12 rounded-lg shadow-2xl" data-aos="fade-up">
+    <div>
+        <h3 class="text-3xl font-bold text-gold text-center mb-8">Información de Contacto</h3> <!-- Margen inferior aumentado a mb-8 -->
+        <ul class="space-y-9 text-gray-200 text-lg">
+            <li class="flex items-center">
+                <i data-feather="map-pin" class="text-gold w-6 h-6 mr-4 flex-shrink-0"></i>
+                <span>Av. Real No. 100, Col. Calesa, Querétaro</span>
+            </li>
+            <li class="flex items-center">
+                <a href="https://wa.me/524492686705" target="_blank" class="flex items-center hover:text-gold transition-colors">
+                    <i data-feather="phone" class="text-gold w-6 h-6 mr-4 flex-shrink-0"></i>
+                    <span class="text-green-500">+52 449 268 6705 (WhatsApp 24/7)</span>
+                </a>
+            </li>
+            <li class="flex items-center">
+                <a href="mailto:rentologia@gmail.com" class="flex items-center hover:text-gold transition-colors">
+                    <i data-feather="mail" class="text-gold w-6 h-6 mr-4 flex-shrink-0"></i>
+                    <span class="text-blue-500">rentologia@gmail.com</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+                    <div class="mt-10 pt-8 border-t border-gray-700 text-center">
+                        <h4 class="font-bold text-xl mb-4 text-gold">Horario de Atención Telefónica</h4>
+                        <p class="text-gray-300">Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                        <p class="text-gray-300">Sábado: 10:00 AM - 2:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Column 1: About -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i data-feather="trending-up" class="text-gold mr-3"></i>
+                        <span class="text-xl font-bold text-gold">Rentología</span>
+                    </div>
+                    <p class="text-sm text-white">Especialistas en maximización de rentas de propiedades a través de formación y asesoría estratégica.</p>
+                </div>
+                <!-- Column 2: Menu -->
+                <div>
+                    <h4 class="font-bold text-gold mb-4 tracking-wider">MENÚ</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-gold transition">Inicio</a></li>
+                        <li><a href="#about" class="hover:text-gold transition">Nosotros</a></li>
+                        <li><a href="#services" class="hover:text-gold transition">Ofertas</a></li>
+                        <li><a href="#pricing" class="hover:text-gold transition">Precios</a></li>
+                        <li><a href="#contact" class="hover:text-gold transition">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3: Contact -->
+                <div>
+                    <h4 class="font-bold text-gold mb-4 tracking-wider">CONTACTO</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center">
+                            <a href="https://wa.me/524492686705" target="_blank" class="flex items-center hover:text-gold transition">
+                                <i data-feather="message-square" class="w-4 h-4 mr-3"></i>
+                                <span class="text-green-500">WhatsApp</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center">
+                            <a href="https://www.linkedin.com/in/juan-carlos-p%C3%A9rez-mtz-798bb5380/" target="_blank" class="flex items-center hover:text-gold transition">
+                                <i data-feather="linkedin" class="w-4 h-4 mr-3"></i>
+                                 <span class="text-blue-500">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center">
+                            <a href="mailto:rentologia@gmail.com" class="flex items-center hover:text-gold transition">
+                                <i data-feather="mail" class="w-4 h-4 mr-3"></i>
+                                 <span class="text-blue-500">rentologia@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Column 4: Legal -->
+               <div>
+    <h4 class="font-bold text-gold mb-4 tracking-wider">LEGAL</h4>
+    <ul class="space-y-2 text-sm">
+        <li><a href="https://www.termsfeed.com/terms-conditions-generator/" target="_blank" class="hover:text-gold transition">Términos y Condiciones</a></li>
+        <li><a href="https://www.termsfeed.com/privacy-policy-generator/" target="_blank" class="hover:text-gold transition">Política de Privacidad</a></li>
+    </ul>
+</div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2025 Rentología. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            disable: window.innerWidth < 768
+        });
+        
+        feather.replace();
+        
+        // Simple animation for cards on hover
+        const cards = document.querySelectorAll('.card-hover');
+        cards.forEach(card => {
+            card.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+        });
+        
+        // Mobile menu toggle (if needed)
+        const mobileMenuButton = document.querySelector('.md\\:hidden');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+    
+</body>
+</html>
